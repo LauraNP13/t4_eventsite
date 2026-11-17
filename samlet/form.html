@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formular | NATURAMA</title>
+  <link rel="stylesheet" href="./css/starter.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./">NATURAMA | Mosemissionen</a>
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./">Forside</a></li>
+          <li><a href="./svg.html">Aktivitetskort</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmeld her!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-page">
+      <header class="form-intro">
+        <h1>Timelding til Mosemission</h1>
+        <p>Tilmeld dig og vær med på en spændende rejse rundt i Mosesamfundet, hvor du bliver klogere på hvilken
+          udfording, der kommer krybende i det skjulte. <br> <br> Vælg ét af fire Mosesamfund og vær med til at hjælpe
+          der, hvor der er brug for det.</p>
+      </header>
+
+      <form class="form-placeholder" action="./opsamling.html">
+        <div>
+          <fieldset>
+            <legend><strong>Kontaktoplysninger</strong></legend>
+            <label for="fulde-navn">Fulde navn *</label>
+            <input type="text" id="fulde-navn" name="fulde-navn" style="text-transform: capitalize;"
+              placeholder="Anders Jensen" required>
+
+            <label for="email">E-mail *</label>
+            <input id="email" name="email" type="email" autocapitalize="none" spellcheck="false"
+              style="text-transform: lowercase;" placeholder="anders.jensen@gmail.com" required>
+
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" maxlength="8" pattern="[0-9]{8}" placeholder="12 34 56 78">
+          </fieldset>
+
+          <fieldset>
+            <legend><strong>Antal deltagere</strong></legend>
+            <label for="antal-voksne">Voksne *</label>
+            <select id="antal-voksne" name="antal-voksne" required>
+              <option value="">Vælg en mulighed</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+
+            <label for="antal-børn">Børn under 18 år *</label>
+            <select id="antal-børn" name="antal-børn" required>
+              <option value="">Vælg en mulighed</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend><strong>Hvilken Mosemission vil du opleve? *</strong></legend>
+            <label for="mosemission-1">
+              <input type="radio" id="mosemission-1" name="mosemission" value="Utterslev mose">
+              Utterslev mose
+            </label>
+            <label for="mosemission-2">
+              <input type="radio" id="mosemission-2" name="mosemission" value="Sengeløse">
+              Sengeløse mose
+            </label>
+            <label for="mosemission-3">
+              <input type="radio" id="mosemission-3" name="mosemission" value="Porsemose">
+              Porsemose
+            </label>
+            <label for="mosemission-4">
+              <input type="radio" id="mosemission-4" name="mosemission" value="Tysmosen">
+              Tysmosen
+            </label>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend><strong>Hvilken dato passer bedst? *</strong></legend>
+            <label for="dato-1">
+              <input type="radio" id="dato-1" name="dato" value="15. Januar">
+              15. januar
+            </label>
+            <label for="reason-2">
+              <input type="radio" id="dato-2" name="dato" value="24. Marts">
+              24. marts
+            </label>
+            <label for="reason-3">
+              <input type="radio" id="dato-3" name="dato" value="2. April">
+              2. april
+            </label>
+          </fieldset>
+
+          <label for="message"><strong>Noget særligt vi skal tage hensyn til?</strong></label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <label>
+            <p>Oplysningerne bruges udelukkende til bekræftelse af deltagelse.</p>
+            <input type="checkbox" name="accept-terms" required>
+            Jeg accepterer *
+          </label>
+          <p class="status" data-status aria-live="polite"></p>
+          <button type="submit">Tilmeld</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-brand">NATURAMA</p>
+      <p class="footer-logo">**vores logo**</p>
+      <div>
+        <p><strong>Kontakt</strong></p>
+        <p>E-mail: naturama@gmail.com</p>
+        <p>Telefon: +45 12 34 56 78</p>
+        <p>Adresse: Mosesvinget, 2400 København NV</p>
+      </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

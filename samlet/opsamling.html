@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opsamling | Eventnavn</title>
+  <link rel="stylesheet" href="./css/starter.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/opsamling.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./">NATURAMA | Mosemissionen</a>
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./">Forside</a></li>
+          <li><a href="./svg.html">Aktivitetskort</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="opsamling-page">
+      <div class="opsamling-intro">
+        <h1>Bekræftelse</h1>
+        <p>Tak for din tilmelding!</p>
+        <p>Vi ser frem til en hyggelig og lærerig dag </p>
+        <div class="actions">
+          <a class="button" href="./form.html">Tilbage til tilmelding</a>
+        </div>
+      </div>
+
+      <article class="opsamling-placeholder">
+        <article class="event-pass">
+        <section class="data">
+          <h2>Dit personlige event-pas</h2>
+          <div class="personal-info-section">
+            <p>Navn: <span id="op-fulde-navn"></span></p>
+            <p>E-mail: <span id="op-email"></span></p>
+            <p>Telefon: <span id="op-phone"></span></p>
+          </div>
+        </section>
+        <section class="op-antal-voksne">
+          <h3>Du har tilmeldt følgende</h3>
+          <p>Antal voksne:</p>
+          <ul id="op-antal-voksne"></ul>
+        </section>
+        <section class="op-antal-børn">
+          <p>Antal børn:</p>
+          <ul id="op-antal-børn"></ul>
+        </section>
+      </article>
+    </section>
+
+    <article class="card">
+      <div class="card-content flow">
+        <h3>Tillykke! Du er vores seneste mosekæmper!</h3>
+        <p>
+          Vi i NATURAMA er stolte af dit mosemod og har i flere år set frem til din deltagelse. </p>
+        </p>
+        <button class="btn" popovertarget="program-details">
+          Modtag din mosemission her!
+        </button>
+      </div>
+      </div>
+    </article>
+
+    <div class="program-details" id="program-details" popover>
+      <img src="/images/blomst.webp" alt="Deltagere omkring et bord med noter og laptops">
+      <div class="program-content flow">
+        <h2>Kære Mosekæmper</h2>
+        <p>
+          Vi har håbet og bedt om godt vejr, så mosen atter igen kan
+          blive fyldt med liv. Noget er slået fejl, da planter og dyr ikke længere er hvor de plejer at være. Du er
+          vores eneste håb for en lys og grøn fremtid! Saml så
+          mange artifakter som muligt inden tiden løber ud. <br><br> NATURAMA og Mosefolket sætter sin lid til dig! Held
+          og lykke og må moseoddsene altid være med dig! </p>
+        <button class="btn" popovertarget="program-details">
+          Luk
+        </button>
+      </div>
+      </article>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-brand">NATURAMA</p>
+      <p class="footer-logo">**vores logo**</p>
+      <div>
+        <p><strong>Kontakt</strong></p>
+        <p>E-mail: naturama@gmail.com</p>
+        <p>Telefon: +45 12 34 56 78</p>
+        <p>Adresse: Mosesvinget, 2400 København NV</p>
+      </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
